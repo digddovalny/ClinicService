@@ -46,8 +46,8 @@ namespace ClinicService.Controllers
             return Ok();
         }
 
-        [HttpGet("get-all")]
-        public IActionResult GetAll()
+        [HttpGet("get-all", Name = "PetGetAll")]
+        public ActionResult<List<Pet>> GetAll()
         {
             return Ok(_petRepository.GetAll());
         }

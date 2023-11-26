@@ -80,13 +80,13 @@ namespace ClinicService
             //    Birthday INTEGER)";
             //sqliteCommand.ExecuteNonQuery();
 
-            sqliteCommand.CommandText =
-                @"CREATE TABLE Consultations(ConsultationId INTEGER PRIMARY KEY,
-                ClientId INTEGER,
-                PetId INTEGER,
-                ConsultationDate INTEGER,
-                Description TEXT)";
-            sqliteCommand.ExecuteNonQuery();
+            //sqliteCommand.CommandText =
+            //    @"CREATE TABLE Consultations(ConsultationId INTEGER PRIMARY KEY,
+            //    ClientId INTEGER,
+            //    PetId INTEGER,
+            //    ConsultationDate INTEGER,
+            //    Description TEXT)";
+            //sqliteCommand.ExecuteNonQuery();
             sqliteCommand.Dispose();
         }
     }
